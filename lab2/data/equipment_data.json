@@ -1,0 +1,23 @@
+[
+    {
+        "type": "helmet",
+        "name": "Шлем Arai",
+        "price": 20000,
+        "weight": 1.5,
+        "helmet_type": "интеграл"
+    },
+    {
+        "type": "jacket",
+        "name": "Куртка Alpinestars",
+        "price": 15000,
+        "weight": 2.3,
+        "material": "кожа"
+    },
+    {
+        "type": "gloves",
+        "name": "Перчатки Dainese",
+        "price": 5000,
+        "weight": 0.3,
+        "size": "M"
+    }
+]
