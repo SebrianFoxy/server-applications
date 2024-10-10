@@ -1,0 +1,12 @@
+Threads | Time (seconds)
+------------------------
+1       | 0.0514
+2       | 0.1028
+4       | 0.2069
+8       | 0.4120
+
+System Specifications:
+Processor: arm
+System: Darwin
+Version: Darwin Kernel Version 23.2.0: Wed Nov 15 21:59:33 PST 2023; root:xnu-10002.61.3~2/RELEASE_ARM64_T8112
+Memory: 8.00 GB

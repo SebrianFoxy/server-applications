@@ -43,7 +43,6 @@ def print_sorted_by_surname():
         print(subscriber)
     print()
 
-time_limit = 40
-print_local_time_exceeds(time_limit)
+print_local_time_exceeds(40)
 print_long_distance_users()
 print_sorted_by_surname()
