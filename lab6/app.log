@@ -1,0 +1,8 @@
+[2024-11-15 12:44:18,552] INFO in _internal: 127.0.0.1 - - [15/Nov/2024 12:44:18] "GET /films HTTP/1.1" 200 -
+[2024-11-15 12:46:11,073] DEBUG in app: Request: GET http://127.0.0.1:5000/set_log_level/debug - Params: ImmutableMultiDict([]) - Body: 
+[2024-11-15 12:46:11,075] DEBUG in app: Response: 200 OK - Data: Log level set to debug
+[2024-11-15 12:46:11,075] INFO in _internal: 127.0.0.1 - - [15/Nov/2024 12:46:11] "GET /set_log_level/debug HTTP/1.1" 200 -
+[2024-11-15 12:46:24,568] DEBUG in app: Request: GET http://127.0.0.1:5000/some_route - Params: ImmutableMultiDict([]) - Body: 
+[2024-11-15 12:46:24,569] INFO in app: some_route took 0.0000 seconds
+[2024-11-15 12:46:24,569] DEBUG in app: Response: 200 OK - Data: Hello, World!
+[2024-11-15 12:46:24,570] INFO in _internal: 127.0.0.1 - - [15/Nov/2024 12:46:24] "GET /some_route HTTP/1.1" 200 -
