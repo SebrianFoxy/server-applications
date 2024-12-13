@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres
+    container_name: my-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: movie
+    ports:
+      - "5432:5432"
+    networks:
+      - my-network
+
+  server:
+    build: backend/
+    command: python ./app.py
+    ports:
+      - "8000:8000"
+    networks:
+      - my-network
+    depends_on:
+      - postgres
+
+  client:
+    build: frontend/
+    ports:
+      - "5173:5173"
+    networks:
+      - my-network
+    depends_on:
+      - server
+
+networks:
+  my-network:
+    driver: bridge
